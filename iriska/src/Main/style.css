@@ -1,0 +1,90 @@
+.Main {
+  height: 5000px;
+  width: 100vw;
+  background: linear-gradient(#2b1055, #7597de);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-items: center;
+  align-items: center;
+
+  position: relative;
+}
+
+section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Main section img {
+  position: absolute;
+  z-index: 0;
+  width: 200px;
+  height: auto;
+}
+
+.Main section img:first-child {
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.Main section img#moon {
+  right: -600px;
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: screen;
+  object-fit: cover;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+.Cards {
+  position: absolute;
+}
+
+.PhComp {
+  z-index: 1;
+  width: 60vw;
+  font-family: "Montserrat", sans-serif;
+
+  margin-top: 250px;
+
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.PhComp img {
+  width: 60%;
+  height: 300px;
+  border-radius: 30px;
+}
+
+.PhComp .text {
+  padding: 15px 20px 0 20px;
+  width: 500px;
+}
+
+.PhComp .text .top {
+  color: #2b1055;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.PhComp .text .down {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+.main{
+    height: 100vh;
+    background-image: url(https://sun9-80.userapi.com/s/v1/if2/syQz4_ylsgwQh1Hc522dYwDngnz5lLwdh7j-9_5h-znaVt5OhR6fmjWp8TS5pKfIDisnzbbK7KdQNsCF2zf8m4pd.jpg?size=1600x900&quality=95&type=album);
+   background-size: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.dark{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{display: inline-flex;}
+
+.wrapper .static-txt{
+    color: white;
+    font-size: 60px;
+}
+.dynamic-txts{
+    margin-left: 15px;
+    color: #fc6d6d;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.dynamic-txts span {
+    position: relative;
+    cursor: pointer;
+}
+
+.dynamic-txts span::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 10px;
+    height: 3.5px;
+    width: 100%;
+    background: linear-gradient(270deg, #30eaba, #ea9c30, #ea30c2, #5fee57, #ee5757, #5768ee);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: beforeAnim 18s ease infinite;
+    -moz-animation: beforeAnim 18s ease infinite;
+    animation: beforeAnim 18s ease infinite;
+}
+
+
+@-webkit-keyframes beforeAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes beforeAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes beforeAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

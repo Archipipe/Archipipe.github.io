@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+.Footer {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("fon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.textFooter {
+  position: absolute;
+  width: 400px;
+  left: 200px;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tTop {
+  font-weight: 600;
+  font-size: 72px;
+  color: rgb(221, 86, 206);
+}
+
+.tDown {
+  font-weight: 500;
+  font-size: 64px;
+  color: rgb(157, 80, 224);
+}
+
+.Footer img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
